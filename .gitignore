@@ -1,0 +1,13 @@
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+TSW*
+
+thesis.pdf
+abstractpage.pdf
+bibentries
