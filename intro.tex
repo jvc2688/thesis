@@ -42,12 +42,12 @@ In a physical model, this mapping function is usually decomposed into different 
 However if the prior knowledge is wrong or incomplete, then a physical model 
 
 Instead of 
-An successful example of this kind of flexible, effective models is the \kepler\ Presearch Data Conditioning (\pdc, \citealt{pdc1}). 
+An successful example of this kind of flexible, effective models is the \kepler\ Presearch Data Conditioning (\pdc, \citealt{pdc1}, \citealt{pdc2}, \citealt{pdc3}). 
 The \pdc builds on the idea that systematic errors have a temporal structure that can be extracted from ancillary quantities.
 \pdc ``co-trends'' or calibrates the \kepler\ light curves by removing those parts that are explained by the basis light curves generated from a principal components analysis (PCA) of filtered light curves.
 That is, it exploits statistical dependences between different time series, regularizing the fit (and avoiding over-fitting) by filtering and restricting the dimensionality (through PCA).
 
-In 
+In \chap{cpm}, we will discuss  
 
 If done well, we would expect a physical model to do a better job, because it embodies more prior information, but it requires research and intuition about dominant effects. 
 If this research and intuition is wrong or incomplete, a physical model may actually perform worse. The model we propose here is in the non-physical, effective category. The Kepler community is familiar with these kinds of models; to our knowledge, all successful light curve “de-trending” methods are flexible, effective models.
@@ -58,6 +58,8 @@ crowded field photomerty
 3 traditional difference imaging is good for crowd field because doing differentiate photometry. However the its performance depends on the the psf
 
 \subsection{Crowded fields photometry}
+One of the biggest challenge in astronomical observation is doing photometry in a crowded fields.
+Crowded fields photometry is hard because
 Difference imaging or image subtraction is a method developed for detecting variable objects in astronomical studies, in which the difference is measured between two images that are both positionally and photometrically matched. This kind of method is optimal for analyzing variability in crowded astronomical images, since it bypasses the procedure of doing photometry for each individual object and comparing with a catalog, but instead directly measures differential photometry.
 The common workflow for difference imaging is:
 \begin{enumerate}
