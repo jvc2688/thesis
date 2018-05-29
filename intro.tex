@@ -1,33 +1,9 @@
-\documentclass[12pt, preprint]{aastex}
+\chapter*{Introduction}\addcontentsline{toc}{chapter}{Introduction}
 
-\usepackage{subfigure}
-\usepackage{color}
-\usepackage{hyperref}
-\usepackage{url}
-\usepackage{natbib}
-
-\newcommand{\project}[1]{\textsl{#1}} 
-\newcommand{\todo}[1]{\textbf{#1}}
-\newcommand{\kepler}{\project{Kepler}}
 \newcommand{\pdc}{\project{PDC}}
-\newcommand{\galex}{\project{GALEX}}
-\newcommand{\ktwo}{\project{K2}}
-\newcommand{\sdss}{\project{SDSS}}
-
-\graphicspath{{figures/}}
-
-\bibliographystyle{apj}
-\definecolor{linkcolor}{rgb}{0,0,0.5}
-\hypersetup{colorlinks=true,linkcolor=linkcolor,citecolor=linkcolor,filecolor=linkcolor,urlcolor=linkcolor}
-
-%temp
-\input{definitions}
 
 
-\begin{document}
-
-\section{Introduction}
-\subsection{Self-calibration in wide-field imaging surveys}
+\section{Self-calibration in wide-field imaging surveys}
 As all other physics experiments, a common challenge in astronomical research is relating a detector output to the underlying physical quantity of interest---calibration.
 
 Traditionally, astronomical imaging calibration is conducted in an absolute way, in which  observations are compared with calibrated standard objects.
@@ -43,7 +19,7 @@ This provides the opportunity to prevent the disadvantages in traditional calibr
 
 In \chap{gs}, we will extend the similar idea to the space-based survey---The Galaxy Evolution Explorer (\galex, \citealt{galex1}), which will deliver the unique images and star catalog in ultraviolet around the Galactic Plane. 
 
-\subsection{Data-driven model}
+\section{Data-driven model}
 As mentioned before, the process of the calibration is to find a mapping function between instrument output and the underlying physical quantity of interest.
 The mapping function (or the model) can be either a physical model or it can be a flexible, effective model that has no direct interpretation in terms of physical parameters---a data-driven model.
 In a physical model, this mapping function is usually decomposed into different parts including telescope pointing, PSF, flat-field, distortion map and so on.
@@ -60,7 +36,7 @@ Relying on the \pdc, thousands of the exoplanets candidates have been discovered
 
 In \chap{cpm}, we will discuss more about the data-driven model as well as incorporate the underlying causal structure into the model.
 
-\subsection{Crowded fields photometry}
+\section{Crowded fields photometry}
 One of the biggest challenge in astronomical observation is doing photometry in a crowded fields.
 Crowded fields photometry is hard because stars in the field are not be isolated.
 Therefore common aperture photometry is not applicable in this situation.
@@ -92,7 +68,7 @@ There are situations that data are taken very differently like \ktwo\ (\citealt{
 These kind of data could provide additional structure and constrain in time-domain.
 In \chap{cdi}, we proposed a totally different method that do not make a reference image and make a model of how pixels predict one another, using the full time history of the data.
 
-\subsection{Outline and contributions}
+\section{Outline and contributions}
 \chap{cpm} has been refereed and published in the astronomical literature.
 \Chap{cdi} has been submitted to \emph{The Astrophysical Journal}.
 \Chap{gs} is in preparation for submission.
@@ -109,15 +85,9 @@ I wrote the paper with additions by David Hogg.}
 I then implemented the project and wrote the paper with Sections contributed by David Hogg and additions by Daniel Foreman-Mackey and Bernhard Sch\"olkopf.}
 
 {\item For \chap{cdi} I developed the idea for the project in collaboration with David Hogg, Daniel Foreman-Mackey, and Bernhard Sch\"olkopf.
-I implemented the project and wrote the paper with additions by David Hogg, Daniel Foreman-Mackey and Bernhard Scho\"lkopf.
+I implemented the project and wrote the paper with additions by David Hogg, Daniel Foreman-Mackey and Bernhard Sch\"olkopf.
 }
 \end{enumerate}
 
-\subsection{Acknowledgement of data and computational resources}
+\section{Acknowledgement of data and computational resources}
 
-\clearpage
-\bibliography{intro}
-%\input{cpm.bbl}
-\clearpage
-
-\end{document}
