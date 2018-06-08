@@ -1,0 +1,23 @@
+\chapter*{Conclusion}\addcontentsline{toc}{chapter}{Conclusion}
+
+In this dissertation, we developed and applied different calibration methods for data observed in very different scenarios, namely the \galex\ Plane Survey photons, the \kepler\ light curves and the \KTCN\ imaging data.
+
+In \Chap{gs}, we present a calibration pipeline for the \cause\ data, which performed both high precision astrometric and photometric calibration for this dataset for the first time.
+The spacecraft attitude solution is measured by cross-correlating the photons and stars, which bypasses any kind of star detection and avoid any choices about how stars are detected.
+To calibrate the sensitivity map, a self-calibration approach is adopted, in which the relative sensitivity is measured by assuming that stars are constant over time and the repeated observations of the same stars are utilized.
+The high precision calibration of NUV imaging data for the Galactic Plane is available for the first time using \galex. 
+Research like \cite{redclump} has already shown that the UV-optical color is an unique probe of physical properties for red clump stars.
+We expect that by calibrating and making the \cause\ data available, it could make plenty of research opportunities possible in Galactic astronomy.
+
+In \Chap{cpm}, we develop a pixel-level data-driven model with causal inputs from the data, which calibrates the \kepler\ light curves for the purpose of exoplanet search.
+In the \cpm, systematics and stellar variabilities are removed by either fitting with other stars' light curves or auto-regressive components, while transit signals are preserved with a train-and-test framework to control model freedom.
+We show that low variable clean light curves can be produced by \cpm, which is ideal for planet search.
+
+Finally, we extend the ideas from \Chap{cpm} to crowded field photometry and present a new category of difference imaging method---\cpmdiff, in which differences are not measured between matched images but instead between image frames and a data-driven predictive model that has been designed only to predict the pointing, PSF, and detector effects but not astronomical variability.
+The proposed new approach is capable of variability search in time-domain imaging in crowded fields from both space-based and ground-based data.
+We also show in \Chap{cdi} that \cpmdiff\ is capable of producing image differences at nearly photon-noise precision. 
+
+The ultimate goal of this dissertation is to better understand how different calibration models perform in different data observation scenarios for different goals.
+There is no single optimal model that fits all the scenarios and scientific requirements.
+I hope with this dissertation, we can understand more about the limitation and boundary between each calibration models and could achieve higher precision in future astronomical surveys.
+
