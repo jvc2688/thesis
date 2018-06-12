@@ -2,16 +2,17 @@ Astronomical research largely relies on observations and imaging data.
 The quality of the dataset depends not only on the performance of the instrument, but also on the performance of the calibration, in which detector output is related to the underlying physical quantity of interest.
 Therefore any better understanding and improvement of the calibration models could potentially enable more scientific discoveries in astronomical research.
 However there is no single optimal calibration model that could fit all scenarios and scientific requirements.
-Thus exploring the limitation and boundary for calibration models or even developing new techniques are essential to achieve higher precision in astronomical surveys.
-In this dissertation, I approach this problem by developing and applying different calibration methods for data observed in very different scenarios, namely the \galex\ Plane Survey photons, the \kepler\ light curves and the \KTCN\ imaging data.
+Thus exploring the limitations and boundaries for calibration models and even developing new techniques is essential to achieve higher precision in astronomical surveys.
+In this dissertation, I approach this problem by developing and applying different calibration methods for data observed in very different scenarios, namely the NASA \galex\ Plane Survey photons, the NASA \kepler\ misson light curves and the NASA \KTCN\ imaging data.
 
-I develop a pipeline to self-calibrate the pointing, distortion map, and sensitivity map of the \galex\ spacecraft.
+I develop a pipeline to self-calibrate the pointing, distortion map, and sensitivity map of the \galex\ spacecraft camera.
 The pointing and distortion map are calibrated by a non-parametric approach, in which photons are cross-correlated with star catalogs. 
-The sensitivity map is measured by assuming star fluxes are constant over time at least on average.
-The pipeline is applied to the \galex\ Plane Survey data and make the dataset available for the first time.
+The sensitivity map is measured by assuming star fluxes are constant over time, at least on average.
+The pipeline is applied to the \galex\ Plane Survey data; I produce the first-ever maps of Galactic Plane with \galex.
 
-I calibrate the \kepler\ light curves the purpose of exoplanet search by developing a pixel-level causal data-driven model, in which systematics and stellar variabilities are removed by either fitting with other stars' light curves or auto-regressive components, while transit signals are preserved with a train-and-test framework to control model freedom.
-The model is able to consistently produce low-noise light curves while still retain transit signals.
+I calibrate \kepler\ photometric light curves for the purpose of exoplanet search by developing a pixel-level, data-driven model, in which systematics and stellar variabilities are removed by either fitting with other stars' light curves or auto-regressive components, while transit signals are preserved with a train-and-test framework to control model freedom.
+The structure of the model is inspired by ideas from causal inference.
+The model is able to consistently produce low-noise light curves while still retaining transit signals.
 
-I extend the pixel-level causal data-driven model to crowded-field photometry and propose a new category of difference imaging method, in which differences are not measured between matched images but instead between image frames and a data-driven predictive model that has been designed only to predict the pointing, PSF, and detector effects but not astronomical variability.
+I extend the pixel-level causal data-driven model to crowded-field photometry and propose a new category of difference-imaging method, in which differences are not measured between matched images but instead between image frames and a data-driven predictive model that has been designed only to predict the pointing, PSF, and detector influences on the photometry but not astronomical variability.
 Applying this model to the \KTCN\ data, the model is verified to be capable of variability search in time-domain imaging in crowded fields.
