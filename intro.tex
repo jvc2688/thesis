@@ -15,19 +15,19 @@ However in many astronomical applications,  the absolute scale of the physical q
 Instead, achieving a consistent relative calibration across the whole dataset is more urgent.
 This provides an opportunity to evade/obviate the disadvantages of traditional calibration, by separating the relative and absolute calibration and only using data from the native telescope system and configuration---self-calibration.
 
-\sdss\ self-calibration \citep{uber} separated the relative calibration from the absolute calibration and make use of the repeat observations to constrain the photometric calibrations, which achieved 1\% relative calibrations/spatial error modes compared with the  previous $\sim$ 2\% relative calibration accuracy \citep{sdss2}.
+\sdss\ self-calibration \citep{uber} separated the relative calibration from the absolute calibration and made use of the repeat observations to constrain the photometric calibrations, which achieved 1\% relative calibrations/spatial error modes compared with the  previous $\sim$ 2\% relative calibration accuracy \citep{sdss2}.
 
 In \chap{gs}, we will extend the similar idea to the space-based survey---The Galaxy Evolution Explorer (\galex, \citealt{galex1}), which will deliver the unique images and star catalog in ultraviolet around the Galactic Plane. 
 
 \section{Data-driven model}
-As mentioned before, the process of the calibration is to find a mapping function between instrument output and the underlying physical quantity of interest.
+As mentioned above, the purpose of the calibration is to find a mapping function between instrument output and the underlying physical quantities of interest.
 The mapping function (or the model) can be either a physical model or it can be a flexible, effective model that has no direct interpretation in terms of physical parameters---a data-driven model.
 In a physical model, this mapping function is usually decomposed into different parts including telescope pointing, PSF, flat-field, distortion map and so on.
-The advantage of the physical model is that it's easy to input the prior information and can be interpreted.
-Therefore a physical model is expected to perform better because of the additional prior information.
-However if the prior knowledge or the intuition about the dominant effects is wrong or incomplete, then a physical model may perform worse.
+The advantage of the physical model is that it is easy to input the prior information and the model can be interpreted.
+A physical model is expected to perform better because of the additional prior information.
+However, if the prior knowledge or the intuition about the dominant effects is wrong or incomplete, then a physical model may perform worse.
 
-Instead a data-driven model is harder to incorporate prior information but also prevents loss from wrong heuristic. 
+Instead in a data-driven model it is harder to incorporate prior information, but also it is also possible to avoid losses stemming from wrong beliefs. 
 An successful example of this kind of flexible, effective models is the \kepler\ Presearch Data Conditioning (\pdc, \citealt{pdc1}, \citealt{pdc2}, \citealt{pdc3}). 
 The \pdc\ builds on the idea that systematic errors have a temporal structure that can be extracted from ancillary quantities.
 \pdc\ ``co-trends'' or calibrates the \kepler\ light curves by removing those parts that are explained by the basis light curves generated from a principal components analysis (PCA) of filtered light curves.
